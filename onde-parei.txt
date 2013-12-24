@@ -1,0 +1,7 @@
+*Falta traduzir datepicker();
+*Implementar buscaCEP (tipo relojoariasaopaulo.com.br - GIT)
+*Implementar insert clientes;
+*Implementar listar clientes;
+*CRUD clientes;
+*Implementar 'Modos de Pesquisa';
+*Implementar mensagens de sucesso / erro;
