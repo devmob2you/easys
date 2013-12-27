@@ -42,9 +42,12 @@ btnNovoCliente.click(function(){
 });
 
 btnListarCliente.click(function(){
+    //window.location="http://this.site.com/";
     divNovoCliente.fadeOut("slow", function(){
         divListaCliente.fadeIn("slow");
     });
+    
+    
 });
 
 

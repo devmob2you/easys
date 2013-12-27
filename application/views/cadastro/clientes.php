@@ -42,55 +42,55 @@
             </div> <!-- END: #listaClientes -->
             
             <div id="novoCliente" class="span12">
-            <form role="form">
+            <form id="formCadCli" name="formCadCli" role="form" method="post" action="<?php echo base_url('home/cadastrar_clientes_bd'); ?>">
             <fieldset>
                 <legend>Cadastro de Clientes</legend>
             
             <div class="span4">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="nome_razao" placeholder="Nome ou Razão Social" />
+                    <input type="text" class="form-control" id="nome_razao" name="nome_razao" placeholder="Nome ou Razão Social" />
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="cpf_cnpj" placeholder="CPF ou CNPJ" />
+                    <input type="text" class="form-control" id="cpf_cnpj" name="cpf_cnpj" placeholder="CPF ou CNPJ" />
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="rg_ie" placeholder="RG ou I.E" />
+                    <input type="text" class="form-control" id="rg_ie" name="rg_ie" placeholder="RG ou I.E" />
                   </div>
                   <div class="form-group">
-                    <input type="tel" class="form-control" id="telefone" placeholder="Telefone Fixo" />
+                    <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Telefone Fixo" />
                   </div>
                   <div class="form-group">
-                    <input type="tel" class="form-control" id="celular" placeholder="Telefone Móvel" />
+                    <input type="tel" class="form-control" id="celular" name="celular" placeholder="Telefone Móvel" />
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="cep" placeholder="CEP (apenas números)" />
+                    <input type="text" class="form-control" id="cep" name="cep" placeholder="CEP (apenas números)" />
                   </div>
             </div>
             
             <div class="span4">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="endereco" placeholder="Endereço" />
+                    <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Endereço" />
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="bairro" placeholder="Bairro" />
+                    <input type="text" class="form-control" id="bairro" name="bairro" placeholder="Bairro" />
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="cidade" placeholder="Cidade" />
+                    <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade" />
                   </div>
                   <div class="form-group j_noselect">
-                    <input type="text" class="form-control" id="uf" placeholder="UF" maxlength="2" />
+                    <input type="text" class="form-control" id="uf" name="uf" placeholder="UF" maxlength="2" />
                   </div>
                   <div class="form-group">
-                    <input type="number" class="form-control" id="numero" placeholder="Número" />
+                    <input type="number" class="form-control" id="numero" name="numero" placeholder="Número" />
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control" id="email" placeholder="@ E-mail" />
+                    <input type="email" class="form-control" id="email" name="email" placeholder="@ E-mail" />
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" id="aniversario" placeholder="Aniversário" />
+                    <input type="text" class="form-control" id="aniversario" name="aniversario" placeholder="Aniversário" />
                   </div>
                   <div class="form-group">
-                    <textarea class="form-control" id="aniversario" placeholder="Observações Gerais"></textarea>
+                    <textarea class="form-control" id="observacoes" name="observacoes" placeholder="Observações Gerais"></textarea>
                   </div>
             </div>
             </fieldset>      
@@ -109,7 +109,7 @@
                 <div class="span8">
                     <div class="btn-group">
                         <button id="btnNovo" class="btn btn-primary">Novo</button>
-                        <button id="btnGravar" class="btn btn-success">Gravar</button> <!-- Grava e Lista -->
+                        <button id="btnGravar" onclick="document.formCadCli.submit()" class="btn btn-success">Gravar</button> <!-- Grava e Lista -->
                         <button id="btnApagar" class="btn btn-danger">Apagar</button>
                         <button id="btnAlterar" class="btn btn-warning">Alterar</button>
                         <button id="btnFechar" class="btn btn-info">Fechar</button>
