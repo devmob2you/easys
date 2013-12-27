@@ -1,5 +1,5 @@
 *Falta traduzir datepicker() - OK
-*Implementar buscaCEP (tipo relojoariasaopaulo.com.br - GIT)
+*Implementar buscaCEP (tipo relojoariasaopaulo.com.br - GIT) - OK
 *Implementar insert clientes;
 *Implementar listar clientes;
 *CRUD clientes;

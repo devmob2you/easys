@@ -5,6 +5,9 @@ var divNovoCliente = $('#novoCliente');
 var btnNovoCliente = $('#btnNovo');
 var btnListarCliente = $('#btnGravar');
 
+
+var endereco = $("#endereco");
+ufCampo = $('#uf');
 /* JQUERY-UI COMPONENTS*/
 $('#aniversario').datepicker({
     showAnim: "explode",
@@ -43,5 +46,61 @@ btnListarCliente.click(function(){
         divListaCliente.fadeIn("slow");
     });
 });
+
+
+
+
+
+
+
+/*FUNÇÃO BUSCACEP*/
+
+        $("#cep").blur(function(){              
+
+            consulta = $("#cep").val()
+            var url = "http://cep.correiocontrol.com.br/" + consulta + ".json";
+            $.ajax({
+                url: url,
+                type:'GET',
+                dataType: 'json',
+                success: function(json){
+                    endereco.val(json.logradouro)
+                    $("#bairro").val(json.bairro)
+                    $("#cidade").val(json.localidade)
+                    ufCampo.val(json.uf)                       
+                    },
+                });//ajax
+            
+            //alert(endereco.val());
+            
+            if(endereco.val().length >2) {
+                $("#numero").focus().delay(1000);
+                uf1.hide();
+                uf2.show();
+            }
+            else{//$("#endereco") == '' || $("#endereco") == undefined || $("#endereco") == object){
+                $("#endereco").focus().delay(1000);
+                uf1.show();
+                uf2.hide();
+                
+            }
+            
+            
+            /*if($("#endereco").length < 2){
+                $("#numero").focus();
+            }*/
+        
+    });
+    //função blur
+    $("#numero").blur(function(){
+        $("#complemento").focus();
+    });
+
+
+
+
+
+
+
 
 });

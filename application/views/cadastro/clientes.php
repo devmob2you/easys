@@ -77,6 +77,9 @@
                   <div class="form-group">
                     <input type="text" class="form-control" id="cidade" placeholder="Cidade" />
                   </div>
+                  <div class="form-group j_noselect">
+                    <input type="text" class="form-control" id="uf" placeholder="UF" maxlength="2" />
+                  </div>
                   <div class="form-group">
                     <input type="number" class="form-control" id="numero" placeholder="Número" />
                   </div>
