@@ -5,6 +5,7 @@
 <title>EaSyS ERP v1.0</title>
 <script src="<?php echo base_url('public/js/jquery.js'); ?>"></script>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/bootstrap.css'); ?>" />
+<script src="<?php echo base_url('public/jquery-ui/js/jquery.ui.datepicker-pt-BR.js'); ?>"></script>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/bootstrap-responsive.css'); ?>" />
 <script src="<?php echo base_url('public/js/bootstrap.js'); ?>"></script>
 
