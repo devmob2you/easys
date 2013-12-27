@@ -1,5 +1,10 @@
 *Falta traduzir datepicker() - OK
 *Implementar buscaCEP (tipo relojoariasaopaulo.com.br - GIT) - OK
+*criar base de dados e configurar no config/database.php
+*carregar library database+session+encryption key
+*carregar global_xss_filtering = TRUE
+*carregar helpers url, form e file
+
 *Implementar insert clientes;
 *Implementar listar clientes;
 *CRUD clientes;
